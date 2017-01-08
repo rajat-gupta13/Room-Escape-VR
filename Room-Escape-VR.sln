@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room-Escape-VR.CSharp.Plugins", "Room-Escape-VR.CSharp.Plugins.csproj", "{FE725711-189E-4108-845C-99D83F236A04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room-Escape-VR.CSharp", "Room-Escape-VR.CSharp.csproj", "{4BD66532-DF0A-ADF3-43E8-0978944FC167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room-Escape-VR.CSharp.Editor", "Room-Escape-VR.CSharp.Editor.csproj", "{0543968B-AFCF-E1CF-4AEB-D201EC96881C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE725711-189E-4108-845C-99D83F236A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE725711-189E-4108-845C-99D83F236A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE725711-189E-4108-845C-99D83F236A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE725711-189E-4108-845C-99D83F236A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD66532-DF0A-ADF3-43E8-0978944FC167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD66532-DF0A-ADF3-43E8-0978944FC167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD66532-DF0A-ADF3-43E8-0978944FC167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD66532-DF0A-ADF3-43E8-0978944FC167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0543968B-AFCF-E1CF-4AEB-D201EC96881C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0543968B-AFCF-E1CF-4AEB-D201EC96881C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0543968B-AFCF-E1CF-4AEB-D201EC96881C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0543968B-AFCF-E1CF-4AEB-D201EC96881C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
