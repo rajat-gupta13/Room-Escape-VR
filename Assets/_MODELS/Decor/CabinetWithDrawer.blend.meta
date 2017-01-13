@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: cc85848a4be64c74a91dfdcbaca9a4b8
+timeCreated: 1484325309
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Baseboard1
+    100002: Baseboard2
+    100004: Baseboard3
+    100006: Cabinet1
+    100008: Cabinet1_Door
+    100010: Cabinet2
+    100012: Cabinet3
+    100014: Cabinet3_Door
+    100016: //RootNode
+    100018: Countertop1
+    100020: Countertop2
+    100022: Countertop3
+    100024: Drawer
+    100026: Drawer_001
+    100028: Drawer_002
+    100030: Handle
+    100032: Handle_001
+    100034: Handle_002
+    100036: Handle_003
+    100038: Handle_004
+    400000: Baseboard1
+    400002: Baseboard2
+    400004: Baseboard3
+    400006: Cabinet1
+    400008: Cabinet1_Door
+    400010: Cabinet2
+    400012: Cabinet3
+    400014: Cabinet3_Door
+    400016: //RootNode
+    400018: Countertop1
+    400020: Countertop2
+    400022: Countertop3
+    400024: Drawer
+    400026: Drawer_001
+    400028: Drawer_002
+    400030: Handle
+    400032: Handle_001
+    400034: Handle_002
+    400036: Handle_003
+    400038: Handle_004
+    2300000: Baseboard1
+    2300002: Baseboard2
+    2300004: Baseboard3
+    2300006: Cabinet1
+    2300008: Cabinet1_Door
+    2300010: Cabinet2
+    2300012: Cabinet3
+    2300014: Cabinet3_Door
+    2300016: Countertop1
+    2300018: Countertop2
+    2300020: Countertop3
+    2300022: Drawer
+    2300024: Drawer_001
+    2300026: Drawer_002
+    2300028: Handle
+    2300030: Handle_001
+    2300032: Handle_002
+    2300034: Handle_003
+    2300036: Handle_004
+    3300000: Baseboard1
+    3300002: Baseboard2
+    3300004: Baseboard3
+    3300006: Cabinet1
+    3300008: Cabinet1_Door
+    3300010: Cabinet2
+    3300012: Cabinet3
+    3300014: Cabinet3_Door
+    3300016: Countertop1
+    3300018: Countertop2
+    3300020: Countertop3
+    3300022: Drawer
+    3300024: Drawer_001
+    3300026: Drawer_002
+    3300028: Handle
+    3300030: Handle_001
+    3300032: Handle_002
+    3300034: Handle_003
+    3300036: Handle_004
+    4300000: Cabinet3
+    4300002: Baseboard3
+    4300004: Countertop3
+    4300006: Cabinet3_Door
+    4300008: Handle_004
+    4300010: Cabinet2
+    4300012: Baseboard2
+    4300014: Countertop2
+    4300016: Drawer_002
+    4300018: Handle_003
+    4300020: Drawer_001
+    4300022: Handle_002
+    4300024: Drawer
+    4300026: Handle_001
+    4300028: Cabinet1
+    4300030: Baseboard1
+    4300032: Countertop1
+    4300034: Cabinet1_Door
+    4300036: Handle
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
