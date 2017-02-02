@@ -6,7 +6,7 @@ public class RemotePicker : MonoBehaviour {
 
 	public GameObject remoteText;
 	public GameObject remote;
-	private static bool remotePicked = false;
+	public static bool remotePicked = false;
 	public GameObject player;
 	public float minDistance = 7.5f;
 
@@ -31,7 +31,7 @@ public class RemotePicker : MonoBehaviour {
 			remoteText.SetActive (true);
 			if (Input.GetButtonDown ("Fire1")) {
 				remotePicked = true;
-				remote.gameObject.active = false;
+				remote.SetActive (false);
 				remoteText.SetActive (false);
 			}
 		}
