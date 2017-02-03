@@ -5,7 +5,7 @@ using System.Collections;
 public class Television : MonoBehaviour {
 
 	public GameObject remoteNotPickedText; 
-	public GameObject televisionText, onScreen;
+	public GameObject televisionText, onScreen, connectedScreen, notConnectedText;
 	public static bool televisionOn = false;
 
 	// Use this for initialization
@@ -19,6 +19,11 @@ public class Television : MonoBehaviour {
 		if (RemotePicker.remotePicked) {
 			remoteNotPickedText.SetActive (false);
 		}
+		if (televisionOn && !Router.routerOn) {
+			notConnectedText.SetActive (true);	
+		} else {
+			notConnectedText.SetActive (false);
+		}
 	}
 
 
@@ -29,14 +34,27 @@ public class Television : MonoBehaviour {
 	public void OnGazeEnter() {
 		if (!RemotePicker.remotePicked) {
 			remoteNotPickedText.SetActive (true);
-		} else if (RemotePicker.remotePicked) {
+		} else if (RemotePicker.remotePicked && !Router.routerOn) {
 			remoteNotPickedText.SetActive (false);
 			televisionText.SetActive (true);
 			if (Input.GetButtonDown ("Fire1")) {
 				televisionOn = true;
 				onScreen.SetActive (true);
+				notConnectedText.SetActive (true);
 				televisionText.SetActive (false);
 			}
+		} else if (RemotePicker.remotePicked && Router.routerOn) { 
+			remoteNotPickedText.SetActive (false);
+			televisionText.SetActive (true);
+			if (Input.GetButtonDown ("Fire1")) {
+				televisionOn = true;
+				connectedScreen.SetActive (true);
+				notConnectedText.SetActive (false);
+				televisionText.SetActive (false);
+			}
+		} else if (televisionOn && Router.routerOn) {
+			notConnectedText.SetActive (false);
+			connectedScreen.SetActive (true);
 		}
 	}
 

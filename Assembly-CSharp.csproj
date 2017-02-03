@@ -97,6 +97,7 @@
      <Compile Include="Assets\Scripts\PlayGame.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RemotePicker.cs" />
+     <Compile Include="Assets\Scripts\Router.cs" />
      <Compile Include="Assets\Scripts\Television.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\VRMovementPack\Scripts\VRAutowalk.cs" />
