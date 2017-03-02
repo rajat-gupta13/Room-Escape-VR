@@ -123,7 +123,11 @@
     <Compile Include="Assets\Scripts\Look.cs" />
     <Compile Include="Assets\Scripts\PlayGame.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\RemotePicker.cs" />
+    <Compile Include="Assets\Scripts\Router.cs" />
+    <Compile Include="Assets\Scripts\Television.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\phone_script.cs" />
     <Compile Include="Assets\VRMovementPack\Scripts\VRAutowalk.cs" />
     <Compile Include="Assets\VRMovementPack\Scripts\VRBluetoothController.cs" />
     <Compile Include="Assets\VRMovementPack\Scripts\VRGazeInputModule.cs" />
@@ -139,6 +143,8 @@
     <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
     <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
     <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
+    <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
