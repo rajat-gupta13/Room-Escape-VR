@@ -109,17 +109,17 @@ public class phone_script : MonoBehaviour {
             }
             if (transform.eulerAngles.x < 80 && A==false)
             {
-                transform.Rotate(new Vector3(1, 0, 0), speed * Time.deltaTime);
+              //  transform.Rotate(new Vector3(1, 0, 0), speed * Time.deltaTime);
                 
             }
             else if (transform.eulerAngles.x >=80)
             {
-                A = true;
+               // A = true;
                
             } 
             
                    
-            if(A && B && C )//opened
+            if(B && C )//opened
             {
                               
                 isOpen = true;
@@ -153,18 +153,18 @@ public class phone_script : MonoBehaviour {
             }
             if (transform.eulerAngles.x >1 && D == false)
             {
-                transform.Rotate(new Vector3(-1, 0, 0), speed * Time.deltaTime);
+               // transform.Rotate(new Vector3(-1, 0, 0), speed * Time.deltaTime);
                
 
             }
             else if (transform.eulerAngles.x <= 5)
             {
-                D = true;
+                //D = true;
                 
             }
 
 
-            if (D && E && F)//closed
+            if (E && F)//closed
             {
                 isOpen = false;
                 toClose = false;
