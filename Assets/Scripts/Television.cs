@@ -67,9 +67,11 @@ public class Television : MonoBehaviour {
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.
 	public void OnGazeTrigger() {
-		televisionOn = true;
-		onScreen.SetActive (true);
-		televisionText.SetActive (false);
+		if (RemotePicker.remotePicked) {
+			televisionOn = true;
+			onScreen.SetActive (true);
+			televisionText.SetActive (false);
+		}
 	}
 
 	#endregion

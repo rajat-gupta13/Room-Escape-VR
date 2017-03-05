@@ -94,6 +94,7 @@
      <Compile Include="Assets\Scripts\ComputerOn.cs" />
      <Compile Include="Assets\Scripts\DoorOpen.cs" />
      <Compile Include="Assets\Scripts\Look.cs" />
+     <Compile Include="Assets\Scripts\Phone.cs" />
      <Compile Include="Assets\Scripts\PlayGame.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RemotePicker.cs" />
