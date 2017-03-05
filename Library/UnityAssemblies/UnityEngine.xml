@@ -46574,6 +46574,11 @@ Useful for restarting a trail from a new position.</para>
         <para>VR Input tracking data.</para>
       </summary>
     </member>
+    <member name="P:UnityEngine.VR.InputTracking.disablePositionalTracking">
+      <summary>
+        <para>[NEEDS REVIEW] Disables positional tracking in VR.</para>
+      </summary>
+    </member>
     <member name="M:UnityEngine.VR.InputTracking.GetLocalPosition(UnityEngine.VR.VRNode)">
       <summary>
         <para>The current position of the requested VRNode.</para>

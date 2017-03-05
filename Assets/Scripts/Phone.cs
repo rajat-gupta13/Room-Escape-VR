@@ -11,6 +11,7 @@ public class Phone : MonoBehaviour {
     private bool toOpen;
 	private Vector3 startPos;
     private bool opened, closed;
+    public static bool phoneOpen = false;
 
 
     // Use this for initialization
@@ -39,6 +40,7 @@ public class Phone : MonoBehaviour {
             //animation
           	if (transform.position == me.transform.position) {
 				opened = true;
+                phoneOpen = true;
 			} else {
                 transform.position = Vector3.MoveTowards(transform.position,me.transform.position,Time.deltaTime*2);
             }
@@ -53,6 +55,7 @@ public class Phone : MonoBehaviour {
 		if (isOpen == true && toClose == true) {
             if (transform.position == it.transform.position) {
 				closed = true;
+                phoneOpen = false;
 			} else {
                 transform.position = Vector3.MoveTowards(transform.position,it.transform.position, Time.deltaTime * 2);
             }
