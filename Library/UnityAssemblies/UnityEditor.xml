@@ -17648,21 +17648,6 @@ Note: calling this function will implicitly call Application.SetStackTraceLogTyp
         <para>Deployment minimal version of tvOS.</para>
       </summary>
     </member>
-    <member name="T:UnityEditor.PlayerSettings.VRGoogle">
-      <summary>
-        <para>Google's VR specific player settings.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.VRGoogle.daydreamIcon">
-      <summary>
-        <para>Foreground image for VR Home.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.VRGoogle.daydreamIconBackground">
-      <summary>
-        <para>Background image for VR Home.</para>
-      </summary>
-    </member>
     <member name="T:UnityEditor.PlayerSettings.WiiU">
       <summary>
         <para>Wii U specific player settings.</para>

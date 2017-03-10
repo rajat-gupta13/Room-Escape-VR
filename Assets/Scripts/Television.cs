@@ -5,7 +5,7 @@ using System.Collections;
 public class Television : MonoBehaviour {
 
 	public GameObject remoteNotPickedText,phoneUpText, scanText, connectedTabletText; 
-	public GameObject televisionText, onScreen, connectedScreen, notConnectedText;
+	public GameObject televisionText, onScreen, connectedScreen,QR,A, notConnectedText;
 	public static bool televisionOn = false;
     private bool televisionConnected = false;
 	public static bool codeScanned = false;
@@ -34,9 +34,12 @@ public class Television : MonoBehaviour {
             }
         }
         if (scanText.activeInHierarchy) {
+            QR.SetActive(true);
+
             if (Input.GetButtonDown("Fire1")) {
                 scanText.SetActive(false);
                 codeScanned = true;
+                A.SetActive(true);
             }
         }
 
