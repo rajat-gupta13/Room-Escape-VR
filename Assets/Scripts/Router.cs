@@ -32,14 +32,16 @@ public class Router : MonoBehaviour {
 	/// Called when the user is looking on a GameObject with this script,
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
-		if (distance <= minDistance) {
-			routerText.SetActive (true);
-			if (Input.GetButtonDown ("Fire1")) {
-				routerOn = true;
-				for (int i = 0; i < routerButtons.Length; i++) {
-					routerButtons[i].SetActive (true);
+		if (!routerOn) {
+			if (distance <= minDistance) {
+				routerText.SetActive (true);
+				if (Input.GetButtonDown ("Fire1")) {
+					routerOn = true;
+					for (int i = 0; i < routerButtons.Length; i++) {
+						routerButtons [i].SetActive (true);
+					}
+					routerText.SetActive (false);
 				}
-				routerText.SetActive (false);
 			}
 		}
 	}
@@ -52,12 +54,14 @@ public class Router : MonoBehaviour {
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.
 	public void OnGazeTrigger() {
-		if (distance <= minDistance) {
-			routerOn = true;
-			for (int i = 0; i < routerButtons.Length; i++) {
-				routerButtons[i].SetActive (true);
+		if (!routerOn) {
+			if (distance <= minDistance) {
+				routerOn = true;
+				for (int i = 0; i < routerButtons.Length; i++) {
+					routerButtons [i].SetActive (true);
+				}
+				routerText.SetActive (false);
 			}
-			routerText.SetActive (false);
 		}
 	}
 

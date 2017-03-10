@@ -90,7 +90,6 @@
      <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
-     <Compile Include="Assets\Scripts\BookOpen.cs" />
      <Compile Include="Assets\Scripts\ComputerOn.cs" />
      <Compile Include="Assets\Scripts\DoorOpen.cs" />
      <Compile Include="Assets\Scripts\Look.cs" />
@@ -99,6 +98,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\RemotePicker.cs" />
      <Compile Include="Assets\Scripts\Router.cs" />
+     <Compile Include="Assets\Scripts\Tablet.cs" />
      <Compile Include="Assets\Scripts\Television.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\VRMovementPack\Scripts\VRAutowalk.cs" />

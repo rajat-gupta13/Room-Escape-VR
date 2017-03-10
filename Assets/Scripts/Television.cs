@@ -4,11 +4,12 @@ using System.Collections;
 [RequireComponent(typeof(Collider))]
 public class Television : MonoBehaviour {
 
-	public GameObject remoteNotPickedText,phoneUpText, scanText; 
+	public GameObject remoteNotPickedText,phoneUpText, scanText, connectedTabletText; 
 	public GameObject televisionText, onScreen, connectedScreen, notConnectedText;
 	public static bool televisionOn = false;
     private bool televisionConnected = false;
-    private bool codeScanned = false;
+	public static bool codeScanned = false;
+	private float timeTillText = 3.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -38,6 +39,14 @@ public class Television : MonoBehaviour {
                 codeScanned = true;
             }
         }
+
+		if (codeScanned) {
+			if (timeTillText >= 0) {
+				timeTillText -= Time.deltaTime;
+			} else {
+				connectedTabletText.SetActive (true);
+			}
+		}
 	}
 
 
