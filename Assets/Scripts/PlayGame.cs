@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayGame : MonoBehaviour {
 
+	public bool testing = true;
 	// Use this for initialization
 	void Start () {
 //		PlayerPrefs.DeleteAll ();
@@ -15,7 +16,7 @@ public class PlayGame : MonoBehaviour {
 	}
 
 	public void Play () {
-		if (!PlayerPrefs.HasKey ("isFirstTime") || PlayerPrefs.GetInt ("isFirstTime") != 1) {
+		if (testing || !PlayerPrefs.HasKey ("isFirstTime") || PlayerPrefs.GetInt ("isFirstTime") != 1) {
 			SceneManager.LoadScene (1);
 			// Show your prologue here.
 			// Now set the value of isFirstTime to be false in the PlayerPrefs.
