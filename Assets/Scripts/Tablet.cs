@@ -42,7 +42,7 @@ public class Tablet : MonoBehaviour {
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
 		looking = true;
-		if (Television.codeScanned && !tabletPicked) {
+		if (Television.codeScanned && !tabletPicked && Television.tabletConnected) {
 			if (distance <= minDistance) {
 				tabletText.SetActive (true);
 				if (Input.GetButtonDown ("Fire1")) {
@@ -69,7 +69,7 @@ public class Tablet : MonoBehaviour {
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.
 	public void OnGazeTrigger() {
-		if (!tabletPicked) {
+		if (Television.tabletConnected && !tabletPicked) {
 			if (distance <= minDistance) {
 				tabletPicked = true;
 				tabletText.SetActive (false);

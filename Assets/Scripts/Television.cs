@@ -5,11 +5,12 @@ using System.Collections;
 public class Television : MonoBehaviour {
 
 	public GameObject remoteNotPickedText,phoneUpText, scanText, connectedTabletText; 
-	public GameObject televisionText, onScreen, connectedScreen,QR,A, notConnectedText;
+	public GameObject televisionText, onScreen, connectedScreen, QR, imageScreen, notConnectedText;
 	public static bool televisionOn = false;
     private bool televisionConnected = false;
 	public static bool codeScanned = false;
 	private float timeTillText = 3.0f;
+	public static bool tabletConnected = false;
 
 	// Use this for initialization
 	void Start () {
@@ -29,25 +30,27 @@ public class Television : MonoBehaviour {
 		}
         if (televisionConnected && !codeScanned) {
             phoneUpText.SetActive(true);
+			QR.SetActive(true);
             if (Phone.phoneOpen) {
                 phoneUpText.SetActive(false);
             }
         }
         if (scanText.activeInHierarchy) {
-            QR.SetActive(true);
-
             if (Input.GetButtonDown("Fire1")) {
                 scanText.SetActive(false);
                 codeScanned = true;
-                A.SetActive(true);
+                imageScreen.SetActive(true);
             }
         }
 
 		if (codeScanned) {
+			QR.SetActive(false);
 			if (timeTillText >= 0) {
 				timeTillText -= Time.deltaTime;
 			} else {
 				connectedTabletText.SetActive (true);
+				imageScreen.SetActive (false);
+				tabletConnected = true;
 			}
 		}
 	}

@@ -90,9 +90,10 @@
      <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
+     <Compile Include="Assets\Scripts\Computer.cs" />
      <Compile Include="Assets\Scripts\ComputerOn.cs" />
-     <Compile Include="Assets\Scripts\DoorOpen.cs" />
      <Compile Include="Assets\Scripts\Look.cs" />
+     <Compile Include="Assets\Scripts\Microwave.cs" />
      <Compile Include="Assets\Scripts\Phone.cs" />
      <Compile Include="Assets\Scripts\PlayGame.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
