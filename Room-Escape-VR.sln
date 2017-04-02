@@ -1,11 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{6D3C60C4-BA73-8AC3-C6CB-18EA6E6C916D}") = "Room-Escape-VR", "Assembly-CSharp-firstpass.csproj", "{D0783309-3E1E-544E-AB27-755DE9705199}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room-Escape-VR", "Assembly-CSharp-firstpass.csproj", "{D0783309-3E1E-544E-AB27-755DE9705199}"
 EndProject
-Project("{6D3C60C4-BA73-8AC3-C6CB-18EA6E6C916D}") = "Room-Escape-VR", "Assembly-CSharp.csproj", "{D4BEEF63-C8F5-6C62-9CAF-526DE23B10B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room-Escape-VR", "Assembly-CSharp.csproj", "{D4BEEF63-C8F5-6C62-9CAF-526DE23B10B0}"
 EndProject
-Project("{6D3C60C4-BA73-8AC3-C6CB-18EA6E6C916D}") = "Room-Escape-VR", "Assembly-CSharp-Editor.csproj", "{69D56604-376F-58B9-0F1F-F2EE3E83C9A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Room-Escape-VR", "Assembly-CSharp-Editor.csproj", "{69D56604-376F-58B9-0F1F-F2EE3E83C9A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
