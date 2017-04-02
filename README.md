@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-* Unity 3D 5.4.1GVR1
+* Unity 3D 5.6
 * GoogleVR SDK v1.0
 ```
 
