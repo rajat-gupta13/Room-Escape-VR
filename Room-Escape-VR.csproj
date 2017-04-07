@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E1E0710-D1E6-6B14-6A94-180CFBFBDE66}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.6.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_HAS_GOOGLEVR</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets\Plugins\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Room-Escape-VR.Plugins.csproj">
+      <Project>{FD77CC31-6F44-9F07-1CC8-1FF1A89FDACA}</Project>
+      <Name>Room-Escape-VR.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
+    <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
+    <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\Teleport.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\GvrHead.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrCameraUtils.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrEye.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPostRender.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPreRender.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrProfile.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoController.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoRenderEffect.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\AndroidDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseAndroidDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseVRDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\EditorDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\GvrDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\UnityVRDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\iOSDevice.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudio.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioListener.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioRoom.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSoundfield.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSource.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrController.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviderFactory.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerState.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GazeInputModule.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrSettings.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\GvrViewer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Pose3D.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrGaze.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazePointer.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
+    <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
+    <Compile Include="Assets\Scripts\Computer.cs" />
+    <Compile Include="Assets\Scripts\ComputerOn.cs" />
+    <Compile Include="Assets\Scripts\Look.cs" />
+    <Compile Include="Assets\Scripts\Microwave.cs" />
+    <Compile Include="Assets\Scripts\Phone.cs" />
+    <Compile Include="Assets\Scripts\PlayGame.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\RemotePicker.cs" />
+    <Compile Include="Assets\Scripts\Router.cs" />
+    <Compile Include="Assets\Scripts\Tablet.cs" />
+    <Compile Include="Assets\Scripts\Television.cs" />
+    <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRAutowalk.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRBluetoothController.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRGazeInputModule.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRLookWalk.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRMouseLook.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRWalkableSurface.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\VRWaypoint.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\Waypoint.cs" />
+    <Compile Include="Assets\VRMovementPack\Scripts\iTween.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+    <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
+    <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
+    <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
+    <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\ar.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\ca.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\cs.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\da.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\de.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\el.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\en.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\en_AU.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\en_GB.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\en_IN.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\es.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\es_MX.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\fi.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\fr.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\he.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\hi.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\hr.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\hu.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\id.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\it.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\iw.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\ja.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\ko.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\nb.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\nl.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\pl.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\pt.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\pt_PT.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\ro.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\ru.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\sk.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\sv.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\th.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\tr.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\uk.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\vi.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\zh_CN.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\zh_HK.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\CardboardSDK.bundle\zh_TW.lproj\CardboardSDK.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ar.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\bg.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ca.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\cs.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\da.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\de.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\el.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\en.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\en_AU.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\en_GB.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\en_IN.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\es.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\es_419.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\es_MX.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\fa.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\fi.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\fr.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\fr_CA.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\he.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\hi.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\hr.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\hu.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\hy.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\id.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\it.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\iw.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ja.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ka.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\kk.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\km.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ko.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\lo.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\lt.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\lv.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\mn.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ms.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\nb.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\nl.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\no.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\pl.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\pt.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\pt_BR.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\pt_PT.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ro.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\ru.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\sk.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\sq.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\sr.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\sv.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\th.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\tr.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\uk.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\vi.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\zh_CN.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\zh_HK.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitCore.bundle\Resources\zh_TW.lproj\GoogleKitCore.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ar.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\bg.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ca.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\cs.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\da.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\de.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\el.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\en.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\en_AU.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\en_GB.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\en_IN.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\es.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\es_419.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\es_MX.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\fa.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\fi.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\fr.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\fr_CA.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\he.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\hi.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\hr.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\hu.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\hy.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\id.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\it.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\iw.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ja.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ka.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\kk.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\km.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ko.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\lo.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\lt.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\lv.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\mn.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ms.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\nb.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\nl.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\no.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\pl.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\pt.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\pt_BR.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\pt_PT.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ro.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\ru.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\sk.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\sq.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\sr.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\sv.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\th.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\tr.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\uk.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\vi.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\zh_CN.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\zh_HK.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitDialogs.bundle\Resources\zh_TW.lproj\GoogleKitDialogs.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ar.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\bg.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ca.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\cs.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\da.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\de.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\el.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\en.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\en_AU.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\en_GB.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\en_IN.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\es.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\es_419.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\es_MX.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\fa.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\fi.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\fr.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\fr_CA.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\he.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\hi.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\hr.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\hu.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\hy.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\id.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\it.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\iw.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ja.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ka.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\kk.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\km.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ko.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\lo.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\lt.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\lv.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\mn.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ms.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\nb.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\nl.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\no.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\pl.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\pt.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\pt_BR.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\pt_PT.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ro.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\ru.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\sk.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\sq.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\sr.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\sv.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\th.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\tr.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\uk.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\vi.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\zh_CN.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\zh_HK.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Plugins\iOS\GoogleKitHUD.bundle\Resources\zh_TW.lproj\GoogleKitHUD.strings.txt" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\VRMovementPack\DemoAssets\Shaders\UnlitTransparentColor.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
