@@ -3,13 +3,15 @@ using System.Collections;
 
 public class Computer : MonoBehaviour {
 
-	public GameObject computer, player, qrCode, connectDiskText, phoneUpText, scanText, imageScreen, dataOnScreens;
+	public GameObject computer, player, qrCode, connectDiskText, imageScreen;
+	public GameObject [] dataOnScreens;
 	public static bool qrScanned = false;
 	public float minDistance = 5f;
 	private float distance;
 	private bool diskConnected = false;
 	private float timeTillText = 3.0f;
-
+	private bool looking = false;
+	public static bool enableKeypad = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,15 +21,10 @@ public class Computer : MonoBehaviour {
 	void Update () {
 		distance = Vector3.Distance (player.transform.position, computer.transform.position);
 		if (diskConnected && !qrScanned) {
-			phoneUpText.SetActive (true);
 			qrCode.SetActive (true);
-			if (Phone.phoneOpen) {
-				phoneUpText.SetActive(false);
-			}
 		}
-		if (scanText.activeInHierarchy) {
+		if (looking && !qrScanned && Phone.phoneOpen) {
 			if (Input.GetButtonDown("Fire1")) {
-				scanText.SetActive(false);
 				qrScanned = true;
 				imageScreen.SetActive(true);
 			}
@@ -38,8 +35,11 @@ public class Computer : MonoBehaviour {
 			if (timeTillText >= 0) {
 				timeTillText -= Time.deltaTime;
 			} else {
-				dataOnScreens.SetActive (true);
+				for (int i = 0; i < dataOnScreens.Length; i++) {
+					dataOnScreens [i].SetActive (true);
+				}
 				imageScreen.SetActive (false);
+				enableKeypad = true;
 			}
 		}
 	}
@@ -50,21 +50,23 @@ public class Computer : MonoBehaviour {
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
 //		Debug.Log (distance);
+		looking = true;
 		if (distance <= minDistance && Microwave.pickedHardDisk && ComputerOn.computerOn && !diskConnected) {
 			connectDiskText.SetActive (true);
 			if (Input.GetButtonDown ("Fire1")) {
 				diskConnected = true;
 			}
 		}
-		if (diskConnected && Phone.phoneOpen && !qrScanned) {
-			scanText.SetActive(true);
-		}
+//		if (diskConnected && Phone.phoneOpen && !qrScanned) {
+//			scanText.SetActive(true);
+//		}
 	}
 
 	/// Called when the user stops looking on the GameObject, after OnGazeEnter
 	/// was already called.
 	public void OnGazeExit() {
 		connectDiskText.SetActive (false);
+		looking = false;
 	}
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.

@@ -13,7 +13,7 @@ public class Tutorial : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (!audioSource.isPlaying) {
-			SceneManager.LoadScene (2);
+			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
 		}
 	}
 }

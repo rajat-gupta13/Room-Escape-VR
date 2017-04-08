@@ -28,13 +28,25 @@ public class Television : MonoBehaviour {
 		} else {
 			notConnectedText.SetActive (false);
 		}
-        if (televisionConnected && !codeScanned) {
-            phoneUpText.SetActive(true);
-			QR.SetActive(true);
-            if (Phone.phoneOpen) {
-                phoneUpText.SetActive(false);
-            }
-        }
+		if (televisionConnected && !codeScanned) {
+			phoneUpText.SetActive (true);
+			QR.SetActive (true);
+			if (Phone.phoneOpen) {
+				phoneUpText.SetActive (false);
+			}
+		} 
+
+		if (televisionConnected && !codeScanned && !Phone.phoneOpen) {
+			phoneUpText.SetActive (true);
+			scanText.SetActive (false);
+			QR.SetActive (true);
+			if (Phone.phoneOpen) {
+				phoneUpText.SetActive (false);
+			}
+		} 
+//		if (!Phone.phoneOpen){
+//			scanText.SetActive (false);
+//		}
         if (scanText.activeInHierarchy) {
             if (Input.GetButtonDown("Fire1")) {
                 scanText.SetActive(false);
@@ -87,9 +99,11 @@ public class Television : MonoBehaviour {
 			connectedScreen.SetActive (true);
             televisionConnected = true;
 		}
-        if (televisionConnected && Phone.phoneOpen && !codeScanned) {
-            scanText.SetActive(true);
-        }
+		if (televisionConnected && Phone.phoneOpen && !codeScanned) {
+			scanText.SetActive (true);
+		} else {
+			scanText.SetActive (false);
+		}
     }
 
  
