@@ -9,17 +9,29 @@ public class RemotePicker : MonoBehaviour {
 	public static bool remotePicked = false;
 	public GameObject player;
 	public float minDistance = 7.5f;
+	private bool looking = false;
 
 	private float distance;
 
 	// Use this for initialization
 	void Start () {
 		remoteText.SetActive (false);
+		looking = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		distance = Vector3.Distance (player.transform.position, remote.transform.position);
+		if (looking) {
+			if (distance <= minDistance) {
+				remoteText.SetActive (true);
+				if (Input.GetButtonDown ("Fire1")) {
+					remotePicked = true;
+					remote.SetActive (false);
+					remoteText.SetActive (false);
+				}
+			}
+		}
 	}
 
 	#region IGvrGazeResponder implementation
@@ -27,20 +39,14 @@ public class RemotePicker : MonoBehaviour {
 	/// Called when the user is looking on a GameObject with this script,
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
-		if (distance <= minDistance) {
-			remoteText.SetActive (true);
-			if (Input.GetButtonDown ("Fire1")) {
-				remotePicked = true;
-				remote.SetActive (false);
-				remoteText.SetActive (false);
-			}
-		}
+		looking = true;
 	}
 
 	/// Called when the user stops looking on the GameObject, after OnGazeEnter
 	/// was already called.
 	public void OnGazeExit() {
 		remoteText.SetActive (false);
+		looking = false;
 	}
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.

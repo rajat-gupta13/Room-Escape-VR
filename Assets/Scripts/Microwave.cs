@@ -12,15 +12,28 @@ public class Microwave : MonoBehaviour {
 	private Animation openMicro;
 	private bool playedClip1 = false;
 	public static bool pickedHardDisk = false;
+	private bool looking = false;
 	// Use this for initialization
 	void Start () {
 		audioSource = microwave.GetComponent<AudioSource> ();
 		openMicro = microwave.GetComponent<Animation> ();
+		looking = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		distance = Vector3.Distance (player.transform.position, microwave.transform.position);
+		if (looking) {
+			if (distance <= minDistance) {
+				if (Input.GetButtonDown ("Fire1")) {
+					microwaveOpened = true;
+					openMicro.enabled = true;
+					if (microwaveOpened && !pickedHardDisk) {
+						hardDiskText.SetActive (true);
+					}
+				}
+			}
+		}
 		if (!microwaveOpened && ComputerOn.computerOn && !playedClip1) {
 			audioSource.clip = clips [0];
 			audioSource.Play ();
@@ -48,21 +61,14 @@ public class Microwave : MonoBehaviour {
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
 //		Debug.Log (distance);
-		if (distance <= minDistance) {
-			if (Input.GetButtonDown ("Fire1")) {
-				microwaveOpened = true;
-				openMicro.enabled = true;
-				if (microwaveOpened && !pickedHardDisk) {
-					hardDiskText.SetActive (true);
-				}
-			}
-		}
+		looking = true;
 	}
 
 	/// Called when the user stops looking on the GameObject, after OnGazeEnter
 	/// was already called.
 	public void OnGazeExit() {
 		hardDiskText.SetActive (false);
+		looking = false;
 	}
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.

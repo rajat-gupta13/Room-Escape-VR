@@ -20,6 +20,14 @@ public class Computer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		distance = Vector3.Distance (player.transform.position, computer.transform.position);
+		if (looking) {
+			if (distance <= minDistance && Microwave.pickedHardDisk && ComputerOn.computerOn && !diskConnected) {
+				connectDiskText.SetActive (true);
+				if (Input.GetButtonDown ("Fire1")) {
+					diskConnected = true;
+				}
+			}
+		}
 		if (diskConnected && !qrScanned) {
 			qrCode.SetActive (true);
 		}
@@ -51,12 +59,7 @@ public class Computer : MonoBehaviour {
 	public void OnGazeEnter() {
 //		Debug.Log (distance);
 		looking = true;
-		if (distance <= minDistance && Microwave.pickedHardDisk && ComputerOn.computerOn && !diskConnected) {
-			connectDiskText.SetActive (true);
-			if (Input.GetButtonDown ("Fire1")) {
-				diskConnected = true;
-			}
-		}
+
 //		if (diskConnected && Phone.phoneOpen && !qrScanned) {
 //			scanText.SetActive(true);
 //		}

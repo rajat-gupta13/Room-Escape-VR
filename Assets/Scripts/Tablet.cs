@@ -21,6 +21,24 @@ public class Tablet : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (looking) {
+			if (Television.codeScanned && !tabletPicked && Television.tabletConnected) {
+				if (distance <= minDistance) {
+					tabletText.SetActive (true);
+					if (Input.GetButtonDown ("Fire1")) {
+						tabletPicked = true;
+						tabletText.SetActive (false);
+						player.GetComponent<VRBluetoothController> ().enabled = false;
+						player.GetComponent<Transform> ().position = new Vector3 (-10f,0.08f, -34.21f);
+						tablet.transform.Rotate (rotationAngle);
+						tablet.transform.Translate (transformDistance);
+						currentScreen.SetActive (false);
+						nextScreen.SetActive (true);
+						pipelineText.SetActive (true);
+					}
+				}
+			}
+		}
 		if (tabletPicked && looking) {
 			if (Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Fire3")) {
 				pipelineText.SetActive (false); 
@@ -42,22 +60,6 @@ public class Tablet : MonoBehaviour {
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
 		looking = true;
-		if (Television.codeScanned && !tabletPicked && Television.tabletConnected) {
-			if (distance <= minDistance) {
-				tabletText.SetActive (true);
-				if (Input.GetButtonDown ("Fire1")) {
-					tabletPicked = true;
-					tabletText.SetActive (false);
-					player.GetComponent<VRBluetoothController> ().enabled = false;
-					player.GetComponent<Transform> ().position = new Vector3 (-10f,0.08f, -34.21f);
-					tablet.transform.Rotate (rotationAngle);
-					tablet.transform.Translate (transformDistance);
-					currentScreen.SetActive (false);
-					nextScreen.SetActive (true);
-					pipelineText.SetActive (true);
-				}
-			}
-		}
 	}
 
 	/// Called when the user stops looking on the GameObject, after OnGazeEnter

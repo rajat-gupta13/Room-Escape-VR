@@ -34,3 +34,14 @@
 /Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
 /Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.dll
 /Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.iOS.Extensions.Xcode.dll.mdb
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.TestRunner.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.Analytics.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.HoloLens.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.Purchasing.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.VR.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.WebGL.Extensions.dll
+/Users/rajatgupta/Documents/Unity Games/Room-Escape-VR/Temp/bin/Debug/UnityEditor.WindowsStandalone.Extensions.dll

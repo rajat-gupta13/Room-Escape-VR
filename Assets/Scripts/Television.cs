@@ -11,15 +11,50 @@ public class Television : MonoBehaviour {
 	public static bool codeScanned = false;
 	private float timeTillText = 3.0f;
 	public static bool tabletConnected = false;
+	private bool looking = false;
 
 	// Use this for initialization
 	void Start () {
 		remoteNotPickedText.SetActive (false);
 		televisionText.SetActive (false);
+		looking = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (looking) {
+			if (!RemotePicker.remotePicked) {
+				remoteNotPickedText.SetActive (true);
+			} else if (RemotePicker.remotePicked && !Router.routerOn && !televisionOn) {
+				remoteNotPickedText.SetActive (false);
+				televisionText.SetActive (true);
+				if (Input.GetButtonDown ("Fire1")) {
+					televisionOn = true;
+					onScreen.SetActive (true);
+					notConnectedText.SetActive (true);
+					televisionText.SetActive (false);
+				}
+			} else if (RemotePicker.remotePicked && Router.routerOn && !televisionOn) { 
+				remoteNotPickedText.SetActive (false);
+				televisionText.SetActive (true);
+				if (Input.GetButtonDown ("Fire1")) {
+					televisionOn = true;
+					connectedScreen.SetActive (true);
+					notConnectedText.SetActive (false);
+					televisionText.SetActive (false);
+					televisionConnected = true;
+				}
+			} else if (televisionOn && Router.routerOn) {
+				notConnectedText.SetActive (false);
+				connectedScreen.SetActive (true);
+				televisionConnected = true;
+			}
+			if (televisionConnected && Phone.phoneOpen && !codeScanned) {
+				scanText.SetActive (true);
+			} else {
+				scanText.SetActive (false);
+			}
+		}
 		if (RemotePicker.remotePicked) {
 			remoteNotPickedText.SetActive (false);
 		}
@@ -73,37 +108,7 @@ public class Television : MonoBehaviour {
 	/// Called when the user is looking on a GameObject with this script,
 	/// as long as it is set to an appropriate layer (see GvrGaze).
 	public void OnGazeEnter() {
-		if (!RemotePicker.remotePicked) {
-			remoteNotPickedText.SetActive (true);
-		} else if (RemotePicker.remotePicked && !Router.routerOn && !televisionOn) {
-			remoteNotPickedText.SetActive (false);
-			televisionText.SetActive (true);
-			if (Input.GetButtonDown ("Fire1")) {
-				televisionOn = true;
-				onScreen.SetActive (true);
-				notConnectedText.SetActive (true);
-				televisionText.SetActive (false);
-			}
-		} else if (RemotePicker.remotePicked && Router.routerOn && !televisionOn) { 
-			remoteNotPickedText.SetActive (false);
-			televisionText.SetActive (true);
-			if (Input.GetButtonDown ("Fire1")) {
-				televisionOn = true;
-				connectedScreen.SetActive (true);
-				notConnectedText.SetActive (false);
-				televisionText.SetActive (false);
-                televisionConnected = true;
-			}
-		} else if (televisionOn && Router.routerOn) {
-			notConnectedText.SetActive (false);
-			connectedScreen.SetActive (true);
-            televisionConnected = true;
-		}
-		if (televisionConnected && Phone.phoneOpen && !codeScanned) {
-			scanText.SetActive (true);
-		} else {
-			scanText.SetActive (false);
-		}
+		looking = true;
     }
 
  
@@ -114,6 +119,7 @@ public class Television : MonoBehaviour {
 		remoteNotPickedText.SetActive (false);
 		televisionText.SetActive (false);
         scanText.SetActive(false);
+		looking = false;
     }
 
 	/// Called when the viewer's trigger is used, between OnGazeEnter and OnGazeExit.
