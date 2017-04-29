@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EndScene.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Assets/Scripts/RemotePicker.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Television.cs" Line="1" Column="1" />
@@ -9,10 +9,14 @@
       <File FileName="Assets/Scripts/Microwave.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Computer.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Tablet.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Tutorial.cs" Line="16" Column="72" />
-      <File FileName="Assets/Scripts/LoadOutro.cs" Line="10" Column="75" />
-      <File FileName="Assets/Scripts/EndScene.cs" Line="13" Column="23" />
+      <File FileName="Assets/Scripts/Tutorial.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LoadOutro.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EndScene.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/PlayGame.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Keypad.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Look.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Router.cs" Line="1" Column="1" />
+      <File FileName="Assets/VRMovementPack/Scripts/VRBluetoothController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

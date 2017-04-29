@@ -39,18 +39,40 @@ namespace Gvr.Internal {
     public abstract void Init();
 
     public abstract void SetVRModeEnabled(bool enabled);
+    public abstract void SetDistortionCorrectionEnabled(bool enabled);
 
     public abstract void SetNeckModelScale(float scale);
+
+    public virtual bool SupportsNativeDistortionCorrection(List<string> diagnostics) {
+      return true;
+    }
+
+    public virtual bool RequiresNativeDistortionCorrection() {
+      return leftEyeOrientation != 0 || rightEyeOrientation != 0;
+    }
 
     public virtual bool SupportsNativeUILayer(List<string> diagnostics) {
       return true;
     }
 
+    public virtual bool ShouldRecreateStereoScreen(int curWidth, int curHeight) {
+      return this.RequiresNativeDistortionCorrection()
+             && (curWidth != (int)recommendedTextureSize[0]
+                 || curHeight != (int)recommendedTextureSize[1]);
+    }
+
     public virtual RenderTexture CreateStereoScreen() {
       float scale = GvrViewer.Instance.StereoScreenScale;
+#if UNITY_5_6_OR_NEWER
+      // Unity  halved the render texture size on 5.6, so we compensate here.
+      scale *= 2.0f;
+#endif  // UNITY_5_6_OR_NEWER
       int width = Mathf.RoundToInt(Screen.width * scale);
       int height = Mathf.RoundToInt(Screen.height * scale);
-
+      if (this.RequiresNativeDistortionCorrection()) {
+        width = (int)recommendedTextureSize[0];
+        height = (int)recommendedTextureSize[1];
+      }
       //Debug.Log("Creating new default stereo screen texture "
       //    + width+ "x" + height + ".");
       var rt = new RenderTexture(width, height, 24, RenderTextureFormat.Default);
@@ -136,6 +158,8 @@ namespace Gvr.Internal {
     public abstract void UpdateScreenData();
 
     public abstract void Recenter();
+
+    public abstract void PostRender(RenderTexture stereoScreen);
 
     public virtual void OnPause(bool pause) {
       if (!pause) {
