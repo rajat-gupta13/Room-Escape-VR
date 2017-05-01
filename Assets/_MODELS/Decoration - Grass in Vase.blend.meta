@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 156f56dd6a5c4f24e96e16c020b4bd4a
+timeCreated: 1493626224
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: potted_grass_blade_002
+    100004: potted_grass_blade_003
+    100006: potted_grass_blade_004
+    100008: potted_grass_blade_005
+    100010: potted_grass_blade_006
+    100012: potted_grass_blade_007
+    100014: potted_grass_blade_008
+    100016: potted_grass_blade_009
+    100018: potted_grass_blade_010
+    100020: potted_grass_blade_011
+    100022: potted_grass_blade_012
+    100024: potted_grass_blade_013
+    100026: potted_grass_blade_014
+    100028: potted_grass_blade_015
+    100030: potted_grass_blade_016
+    100032: potted_grass_blade_017
+    100034: potted_grass_blade_018
+    100036: potted_grass_blade_019
+    100038: potted_grass_blade_020
+    100040: potted_grass_dirt
+    100042: potted_grass_fern
+    400000: //RootNode
+    400002: potted_grass_blade_002
+    400004: potted_grass_blade_003
+    400006: potted_grass_blade_004
+    400008: potted_grass_blade_005
+    400010: potted_grass_blade_006
+    400012: potted_grass_blade_007
+    400014: potted_grass_blade_008
+    400016: potted_grass_blade_009
+    400018: potted_grass_blade_010
+    400020: potted_grass_blade_011
+    400022: potted_grass_blade_012
+    400024: potted_grass_blade_013
+    400026: potted_grass_blade_014
+    400028: potted_grass_blade_015
+    400030: potted_grass_blade_016
+    400032: potted_grass_blade_017
+    400034: potted_grass_blade_018
+    400036: potted_grass_blade_019
+    400038: potted_grass_blade_020
+    400040: potted_grass_dirt
+    400042: potted_grass_fern
+    2300000: //RootNode
+    2300002: potted_grass_blade_002
+    2300004: potted_grass_blade_003
+    2300006: potted_grass_blade_004
+    2300008: potted_grass_blade_005
+    2300010: potted_grass_blade_006
+    2300012: potted_grass_blade_007
+    2300014: potted_grass_blade_008
+    2300016: potted_grass_blade_009
+    2300018: potted_grass_blade_010
+    2300020: potted_grass_blade_011
+    2300022: potted_grass_blade_012
+    2300024: potted_grass_blade_013
+    2300026: potted_grass_blade_014
+    2300028: potted_grass_blade_015
+    2300030: potted_grass_blade_016
+    2300032: potted_grass_blade_017
+    2300034: potted_grass_blade_018
+    2300036: potted_grass_blade_019
+    2300038: potted_grass_blade_020
+    2300040: potted_grass_dirt
+    2300042: potted_grass_fern
+    3300000: //RootNode
+    3300002: potted_grass_blade_002
+    3300004: potted_grass_blade_003
+    3300006: potted_grass_blade_004
+    3300008: potted_grass_blade_005
+    3300010: potted_grass_blade_006
+    3300012: potted_grass_blade_007
+    3300014: potted_grass_blade_008
+    3300016: potted_grass_blade_009
+    3300018: potted_grass_blade_010
+    3300020: potted_grass_blade_011
+    3300022: potted_grass_blade_012
+    3300024: potted_grass_blade_013
+    3300026: potted_grass_blade_014
+    3300028: potted_grass_blade_015
+    3300030: potted_grass_blade_016
+    3300032: potted_grass_blade_017
+    3300034: potted_grass_blade_018
+    3300036: potted_grass_blade_019
+    3300038: potted_grass_blade_020
+    3300040: potted_grass_dirt
+    3300042: potted_grass_fern
+    4300000: potted_grass_pot
+    4300002: potted_grass_dirt
+    4300004: potted_grass_fern
+    4300006: potted_grass_blade_002
+    4300008: potted_grass_blade_003
+    4300010: potted_grass_blade_004
+    4300012: potted_grass_blade_005
+    4300014: potted_grass_blade_006
+    4300016: potted_grass_blade_007
+    4300018: potted_grass_blade_008
+    4300020: potted_grass_blade_009
+    4300022: potted_grass_blade_010
+    4300024: potted_grass_blade_011
+    4300026: potted_grass_blade_012
+    4300028: potted_grass_blade_013
+    4300030: potted_grass_blade_014
+    4300032: potted_grass_blade_015
+    4300034: potted_grass_blade_016
+    4300036: potted_grass_blade_017
+    4300038: potted_grass_blade_018
+    4300040: potted_grass_blade_019
+    4300042: potted_grass_blade_020
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
