@@ -13,6 +13,7 @@ public class Tablet : MonoBehaviour {
 	public Vector3 rotationAngle = new Vector3 (0f, -90f, -20f);
 	public Vector3 transformDistance = new Vector3 (0f, 2f, 0.5f);
 	public GameObject door, door1;
+	private float delayTime = 3.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -39,7 +40,7 @@ public class Tablet : MonoBehaviour {
 				}
 			}
 		}
-		if (tabletPicked && looking) {
+		if (tabletPicked && looking && delayTime <= 0.0f) {
 			if (Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Fire3")) {
 				pipelineText.SetActive (false); 
 				tablet.transform.eulerAngles = new Vector3 (180,180,180);
@@ -48,6 +49,8 @@ public class Tablet : MonoBehaviour {
 				door.SetActive (false);
 				door1.SetActive (true);
 			}
+		} else if (tabletPicked && looking && delayTime > 0.0f) {
+			delayTime -= Time.deltaTime;
 		} else {
 			distance = Vector3.Distance (player.transform.position, tablet.transform.position);
 //			Debug.Log (distance); 

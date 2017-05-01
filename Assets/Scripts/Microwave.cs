@@ -13,6 +13,7 @@ public class Microwave : MonoBehaviour {
 	private bool playedClip1 = false;
 	public static bool pickedHardDisk = false;
 	private bool looking = false;
+	private float delayTime = 2.0f;
 	// Use this for initialization
 	void Start () {
 		audioSource = microwave.GetComponent<AudioSource> ();
@@ -46,12 +47,14 @@ public class Microwave : MonoBehaviour {
 		} else if (microwaveOpened) {
 			audioSource.Stop ();
 		}
-		if (microwaveOpened && hardDiskText.activeInHierarchy) {
+		if (microwaveOpened && hardDiskText.activeInHierarchy && delayTime <= 0.0f) {
 			if (Input.GetButtonDown ("Fire1")) {
 				hardDisk.SetActive (false);
 				hardDiskText.SetActive (false);
 				pickedHardDisk = true;
 			}
+		} else if (microwaveOpened && hardDiskText.activeInHierarchy && delayTime > 0.0f){
+			delayTime -= Time.deltaTime;
 		}
 	}
 

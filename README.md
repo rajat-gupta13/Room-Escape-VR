@@ -14,7 +14,7 @@ What things you need to install the software and how to install them
 
 ```
 * Unity 3D 5.6
-* GoogleVR SDK v1.0
+* GoogleVR SDK v1.3
 ```
 
 ### Rules of the Game
